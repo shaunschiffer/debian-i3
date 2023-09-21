@@ -1,4 +1,4 @@
-#!/bin/bashi
+#!/bin/bash
 
 # Check if Script is Run as Root
 if [[ $EUID -ne 0 ]]; then
@@ -80,7 +80,7 @@ systemctl enable bluetooth
 sudo apt install -y feh
 
 # Packages needed i3-gaps after installation
-sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip
+sudo apt install -y sxhkd numlockx rofi dunst libnotify-bin picom
 
 # Lightdm can be used instead of Ly (more common)
 # comment out all ly console display if choosing lightdm
@@ -92,7 +92,7 @@ sudo apt install -y micro
 # sudo apt install -y neovim
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
+# sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
